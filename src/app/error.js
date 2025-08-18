@@ -164,8 +164,8 @@ const ErrorPage = () => {
             <p className={`text-xl mb-8 max-w-2xl mx-auto leading-relaxed ${
               isDark ? 'text-slate-300' : 'text-slate-600'
             }`}>
-              The page you're looking for seems to have taken a vacation. Don't worry, 
-              it happens to the best of us! Let's get you back on track.
+              The page youre looking for seems to have taken a vacation. Dont worry, 
+              it happens to the best of us! Lets get you back on track.
             </p>
 
             {/* Status indicators */}
