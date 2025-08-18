@@ -42,8 +42,8 @@ const Navbar = () => {
       ]
     },
     { href: '/services', label: 'Services' },
-    { href: '/about', label: 'About Us' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/aboutus', label: 'About Us' },
+    
   ];
 
   const handleDropdownToggle = (index) => {
@@ -134,6 +134,7 @@ const Navbar = () => {
                       )}
                     </div>
                   ) : (
+                   
                     <Link
                       href={link.href}
                       className="px-4 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800"
