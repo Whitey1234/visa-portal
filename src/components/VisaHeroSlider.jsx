@@ -13,6 +13,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
+import Link from 'next/link';
 
 
 
@@ -246,10 +247,13 @@ const VisaHeroSlider = () => {
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up animation-delay-900">
-                  <button className="group bg-gradient-to-r from-orange-500 via-red-500 to-blue-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-6 px-12 rounded-full shadow-2xl transform hover:-translate-y-3 transition-all duration-300 hover:shadow-orange-500/30 text-lg flex items-center justify-center gap-3 min-w-[280px] border-2 border-transparent hover:border-white/20">
-                    {slide.buttonText}
+                  <Link href={'/services'} className=" group bg-gradient-to-r from-orange-500 via-red-500 to-blue-500 hover:from-orange-600 hover:via-red-600 hover:to-pink-600 text-white font-bold py-6 px-12 rounded-full shadow-2xl transform hover:-translate-y-3 transition-all duration-300 hover:shadow-orange-500/30 text-lg flex items-center justify-center gap-3 min-w-[280px] border-2 border-transparent hover:border-white/20">
+                  {slide.buttonText}
                     <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
-                  </button>
+                  </Link>
+                   
+                    
+                  
                   <button className="text-white border-2 border-white/60 hover:border-white backdrop-blur-lg bg-white/10 hover:bg-white/20 font-bold py-6 px-12 rounded-full transform hover:-translate-y-3 transition-all duration-300 text-lg min-w-[280px] flex items-center justify-center gap-3">
                     <Clock className="w-5 h-5" />
                     Track Application

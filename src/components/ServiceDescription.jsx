@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Link from 'next/link';
 
 const PremiumServiceDescription = () => {
     useEffect(()=>{
@@ -207,15 +208,15 @@ const PremiumServiceDescription = () => {
                 </div>
                 
                 <div className="flex flex-col gap-4">
-                  <button 
+                  <Link href={'/application'}
                   type='primery' className="bg-gradient-to-r from-orange-600 
                   to-blue-600 hover:from-orange-700 hover:to-pink-500-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-3 whitespace-nowrap">
                     <span>Start Your Application</span>
                     <ArrowRight className="w-5 h-5" />
-                  </button>
-                  <button className="border-2 border-slate-300 hover:border-indigo-300 text-slate-700 hover:text-blue-600 font-semibold py-4 px-8 rounded-xl transition-colors duration-300 whitespace-nowrap">
+                  </Link>
+                  <Link href={'/services'} className="border-2 border-slate-300 hover:border-indigo-300 text-slate-700 hover:text-blue-600 font-semibold py-4 px-8 rounded-xl transition-colors duration-300 whitespace-nowrap">
                     Schedule Consultation
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -21,6 +21,7 @@ import {
   Phone,
   Mail
 } from 'lucide-react';
+import Link from 'next/link';
 
 const AboutUsPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -76,7 +77,7 @@ const AboutUsPage = () => {
     {
       name: 'Sarah Chen',
       role: 'CEO & Founder',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face',
+      image: 'https://i.ibb.co.com/j93Tmx2t/pexels-polina-tankilevitch-6929164.jpg',
       bio: 'Former immigration lawyer with 15+ years of experience in international visa processing.',
       gradient: 'from-blue-500 to-purple-500'
     },
@@ -156,13 +157,13 @@ const AboutUsPage = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              <button className="px-8 py-4 bg-gradient-to-r from-orange-600 to-blue-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              <Link href={'/application'} className="px-8 py-4 bg-gradient-to-r from-orange-600 to-blue-600 text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                 Start Your Journey
-              </button>
-              <button className="flex items-center justify-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-800 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-300 transition-all duration-300">
+              </Link>
+              <Link href={'/aboutus'} className="flex items-center justify-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-800 rounded-xl font-semibold border-2 border-gray-200 hover:border-blue-300 transition-all duration-300">
                 <Play className="w-5 h-5" />
                 Watch Our Story
-              </button>
+              </Link>
             </div>
 
             {/* Stats Grid */}
