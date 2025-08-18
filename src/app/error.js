@@ -278,7 +278,7 @@ const ErrorPage = () => {
             <p className={`mb-6 ${
               isDark ? 'text-slate-300' : 'text-slate-600'
             }`}>
-              Our support team is here to help you find what you're looking for.
+              Our support team is here to help you find what youre looking for.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
